@@ -56,6 +56,7 @@ Word order is the entire pedagogy of the deck; a drag-into-slots drill mirrors i
 - **Speak-and-check** with `SpeechRecognition` (Chrome/Edge only — treat as bonus).
 - **"Trip mode"** — examples in journey order (plane → immigration → transport → hotel → restaurant).
 - Japanese is the default prompt; an EN-only toggle is trivial since both are in the data.
+- **Listening mode** — for cashier/staff-spoken lines (especially Shopping & Tourism), play the sentence as audio *first* and have her build or recognize it from hearing, instead of reading it. This targets the hardest part of a real trip — understanding fast American employees — rather than only production. The data already supports it (every example has `full` for TTS); it's a UI/mode change, not a content change.
 
 ## 5. Tech stack
 
