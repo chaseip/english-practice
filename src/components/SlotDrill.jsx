@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { slotTypes, getColor, shuffle, checkAnswer } from '../lib/slots'
+import { slotTypes, shuffle, checkAnswer } from '../lib/slots'
 
 export default function SlotDrill({ example, onSuccess, speak }) {
   const [chips, setChips] = useState([])
@@ -109,8 +109,7 @@ export default function SlotDrill({ example, onSuccess, speak }) {
           <button
             key={chip.id}
             onClick={() => placeChip(chip)}
-            className="px-3 py-2 text-white text-sm font-medium rounded-lg active:scale-95 transition-transform shadow-sm"
-            style={{ backgroundColor: getColor(chip.type) }}
+            className="px-3 py-2 text-white text-sm font-medium rounded-lg active:scale-95 transition-transform shadow-sm bg-gray-700"
           >
             {chip.text}
           </button>
