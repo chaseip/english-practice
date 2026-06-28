@@ -1,0 +1,2813 @@
+{
+  "_comment": "20 English word-order patterns (英語の語順20選) from the Canva, with travel-themed examples. Each example is broken into ordered slot cells so the app can render the colored table, scramble the cells for word-order practice, or blank them for fill-in-the-blank. Edit `full`, `ja`, and `cells` freely; keep `cells` in sentence order.",
+  "slotTypes": {
+    "subject": {
+      "ja": "誰(何)が",
+      "en": "Who/What",
+      "color": "#E4262C"
+    },
+    "verb": {
+      "ja": "どうする",
+      "en": "Action (verb)",
+      "color": "#F47B20"
+    },
+    "object": {
+      "ja": "何を",
+      "en": "What (object)",
+      "color": "#FFC107"
+    },
+    "place": {
+      "ja": "どこで",
+      "en": "Where",
+      "color": "#7CB342"
+    },
+    "time": {
+      "ja": "いつ",
+      "en": "When",
+      "color": "#26C6DA"
+    },
+    "duration": {
+      "ja": "時間",
+      "en": "Duration",
+      "color": "#EF6C00"
+    },
+    "neg": {
+      "ja": "don't系",
+      "en": "don't/doesn't/didn't",
+      "color": "#9AA0A6"
+    },
+    "not": {
+      "ja": "not",
+      "en": "not",
+      "color": "#9AA0A6"
+    },
+    "do": {
+      "ja": "Do系",
+      "en": "Do/Does/Did",
+      "color": "#5C6BC0"
+    },
+    "aux": {
+      "ja": "助動詞",
+      "en": "Modal/Aux",
+      "color": "#7E57C2"
+    },
+    "be": {
+      "ja": "be動詞",
+      "en": "be-verb",
+      "color": "#2196F3"
+    },
+    "qword": {
+      "ja": "5W1H",
+      "en": "Question word",
+      "color": "#EC407A"
+    },
+    "manner": {
+      "ja": "どうやって",
+      "en": "How (manner)",
+      "color": "#00897B"
+    },
+    "person": {
+      "ja": "人",
+      "en": "Person",
+      "color": "#AB47BC"
+    },
+    "thing": {
+      "ja": "物",
+      "en": "Thing",
+      "color": "#FBC02D"
+    },
+    "toverb": {
+      "ja": "to どうする",
+      "en": "to + verb",
+      "color": "#8D6E63"
+    },
+    "adj": {
+      "ja": "形容詞",
+      "en": "Adjective",
+      "color": "#FF7043"
+    },
+    "complement": {
+      "ja": "人/物/状態",
+      "en": "Complement",
+      "color": "#607D8B"
+    },
+    "frame": {
+      "ja": "決まり文句",
+      "en": "Frame",
+      "color": "#78909C"
+    },
+    "prep": {
+      "ja": "in/on/at",
+      "en": "Preposition",
+      "color": "#B0BEC5"
+    }
+  },
+  "contexts": [
+    {
+      "id": "airplane",
+      "label": "Airplane",
+      "emoji": "✈️"
+    },
+    {
+      "id": "immigration",
+      "label": "Immigration",
+      "emoji": "🛂"
+    },
+    {
+      "id": "transportation",
+      "label": "Transportation",
+      "emoji": "🚕"
+    },
+    {
+      "id": "hotel",
+      "label": "Hotel",
+      "emoji": "🏨"
+    },
+    {
+      "id": "restaurant",
+      "label": "Restaurant",
+      "emoji": "🍽️"
+    }
+  ],
+  "models": [
+    {
+      "id": 1,
+      "title_ja": "誰(何)が → どうする → 何を → どこで → いつ",
+      "title_en": "Subject + Verb + Object + Place + Time",
+      "grammar": "Basic affirmative sentence (present). The backbone of English word order.",
+      "slots": [
+        "subject",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "restaurant",
+          "full": "I order a coffee at the café every morning.",
+          "ja": "私は毎朝カフェでコーヒーを注文します。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "order"
+            },
+            {
+              "type": "object",
+              "text": "a coffee"
+            },
+            {
+              "type": "place",
+              "text": "at the café"
+            },
+            {
+              "type": "time",
+              "text": "every morning"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "We eat breakfast at the hotel every day.",
+          "ja": "私たちは毎日ホテルで朝食を食べます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "verb",
+              "text": "eat"
+            },
+            {
+              "type": "object",
+              "text": "breakfast"
+            },
+            {
+              "type": "place",
+              "text": "at the hotel"
+            },
+            {
+              "type": "time",
+              "text": "every day"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "I take the bus to the city every morning.",
+          "ja": "私は毎朝バスで街へ行きます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "the bus"
+            },
+            {
+              "type": "place",
+              "text": "to the city"
+            },
+            {
+              "type": "time",
+              "text": "every morning"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "I check my passport at the gate before boarding.",
+          "ja": "私は搭乗前にゲートでパスポートを確認します。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "check"
+            },
+            {
+              "type": "object",
+              "text": "my passport"
+            },
+            {
+              "type": "place",
+              "text": "at the gate"
+            },
+            {
+              "type": "time",
+              "text": "before boarding"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "The officer stamps my passport at the counter.",
+          "ja": "係官はカウンターでパスポートにスタンプを押します。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The officer"
+            },
+            {
+              "type": "verb",
+              "text": "stamps"
+            },
+            {
+              "type": "object",
+              "text": "my passport"
+            },
+            {
+              "type": "place",
+              "text": "at the counter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_ja": "誰(何)が → don't → どうする → 何を → どこで → いつ",
+      "title_en": "Subject + don't + Verb … (negative)",
+      "grammar": "Negative with don't (I / you / we / they).",
+      "slots": [
+        "subject",
+        "neg",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "restaurant",
+          "full": "We don't have a reservation tonight.",
+          "ja": "私たちは今夜予約がありません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a reservation"
+            },
+            {
+              "type": "time",
+              "text": "tonight"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "I don't need a wake-up call tomorrow.",
+          "ja": "明日はモーニングコールは要りません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "need"
+            },
+            {
+              "type": "object",
+              "text": "a wake-up call"
+            },
+            {
+              "type": "time",
+              "text": "tomorrow"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "I don't speak much English.",
+          "ja": "私はあまり英語を話せません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "speak"
+            },
+            {
+              "type": "object",
+              "text": "much English"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "I don't have any liquids in my bag.",
+          "ja": "私はかばんに液体物を持っていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "any liquids"
+            },
+            {
+              "type": "place",
+              "text": "in my bag"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "We don't eat meat.",
+          "ja": "私たちは肉を食べません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "eat"
+            },
+            {
+              "type": "object",
+              "text": "meat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_ja": "誰(何)が → doesn't → 何を → どこで → いつ",
+      "title_en": "Subject + doesn't + Verb … (negative, 3rd person)",
+      "grammar": "Negative with doesn't (he / she / it / this / that).",
+      "slots": [
+        "subject",
+        "neg",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "transportation",
+          "full": "This bus doesn't stop at the airport.",
+          "ja": "このバスは空港に止まりません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This bus"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "stop"
+            },
+            {
+              "type": "place",
+              "text": "at the airport"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "My room doesn't have a view.",
+          "ja": "私の部屋には眺めがありません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "My room"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a view"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "This dish doesn't contain nuts.",
+          "ja": "この料理にはナッツが入っていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This dish"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "contain"
+            },
+            {
+              "type": "object",
+              "text": "nuts"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "The elevator doesn't go to the top floor.",
+          "ja": "エレベーターは最上階には行きません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The elevator"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "go"
+            },
+            {
+              "type": "place",
+              "text": "to the top floor"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "This ticket doesn't work on the subway.",
+          "ja": "このチケットは地下鉄では使えません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This ticket"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "work"
+            },
+            {
+              "type": "place",
+              "text": "on the subway"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_ja": "誰(何)が → didn't → 何を → どこで → いつ",
+      "title_en": "Subject + didn't + Verb … (negative, past)",
+      "grammar": "Negative in the past with didn't (all subjects).",
+      "slots": [
+        "subject",
+        "neg",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "airplane",
+          "full": "My suitcase didn't arrive on time.",
+          "ja": "私のスーツケースは時間どおりに届きませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "My suitcase"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "arrive"
+            },
+            {
+              "type": "time",
+              "text": "on time"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "I didn't order this.",
+          "ja": "これは注文していません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "order"
+            },
+            {
+              "type": "object",
+              "text": "this"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "We didn't catch the last train last night.",
+          "ja": "私たちは昨夜終電に間に合いませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "catch"
+            },
+            {
+              "type": "object",
+              "text": "the last train"
+            },
+            {
+              "type": "time",
+              "text": "last night"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "The staff didn't clean my room today.",
+          "ja": "スタッフは今日、部屋を掃除しませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The staff"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "clean"
+            },
+            {
+              "type": "object",
+              "text": "my room"
+            },
+            {
+              "type": "time",
+              "text": "today"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "I didn't get my change.",
+          "ja": "おつりをもらいませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "get"
+            },
+            {
+              "type": "object",
+              "text": "my change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_ja": "Do → 誰(何)が → どうする → 何を → どこで → いつ",
+      "title_en": "Do + Subject + Verb …? (Yes/No question)",
+      "grammar": "Yes/No question with Do (I / you / we / they).",
+      "slots": [
+        "do",
+        "subject",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "restaurant",
+          "full": "Do you have a table for two?",
+          "ja": "二人用のテーブルはありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a table for two"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "Do they accept credit cards here?",
+          "ja": "ここはクレジットカードは使えますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "they"
+            },
+            {
+              "type": "verb",
+              "text": "accept"
+            },
+            {
+              "type": "object",
+              "text": "credit cards"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Do you have a room for tonight?",
+          "ja": "今夜空いている部屋はありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a room"
+            },
+            {
+              "type": "time",
+              "text": "for tonight"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "Do you have a kids' menu?",
+          "ja": "お子様メニューはありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a kids' menu"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "Do you serve meals on this flight?",
+          "ja": "この便で食事は出ますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "serve"
+            },
+            {
+              "type": "object",
+              "text": "meals"
+            },
+            {
+              "type": "place",
+              "text": "on this flight"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_ja": "Does → 誰(何)が → どうする → 何を → どこで → いつ",
+      "title_en": "Does + Subject + Verb …? (Yes/No question, 3rd person)",
+      "grammar": "Yes/No question with Does (he / she / it / this).",
+      "slots": [
+        "do",
+        "subject",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "transportation",
+          "full": "Does this train go downtown?",
+          "ja": "この電車は中心街へ行きますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "this train"
+            },
+            {
+              "type": "verb",
+              "text": "go"
+            },
+            {
+              "type": "place",
+              "text": "downtown"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Does the room come with breakfast?",
+          "ja": "その部屋は朝食付きですか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "the room"
+            },
+            {
+              "type": "verb",
+              "text": "come with"
+            },
+            {
+              "type": "object",
+              "text": "breakfast"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "Does this contain dairy?",
+          "ja": "これには乳製品が入っていますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "this"
+            },
+            {
+              "type": "verb",
+              "text": "contain"
+            },
+            {
+              "type": "object",
+              "text": "dairy"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Does the hotel have a shuttle?",
+          "ja": "ホテルにシャトルバスはありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "the hotel"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a shuttle"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "Does this bus stop near the museum?",
+          "ja": "このバスは美術館の近くに止まりますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "this bus"
+            },
+            {
+              "type": "verb",
+              "text": "stop"
+            },
+            {
+              "type": "place",
+              "text": "near the museum"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title_ja": "Did → 誰(何)が → どうする → 何を → どこで → いつ",
+      "title_en": "Did + Subject + Verb …? (Yes/No question, past)",
+      "grammar": "Yes/No question in the past with Did (all subjects).",
+      "slots": [
+        "do",
+        "subject",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "airplane",
+          "full": "Did you book a window seat?",
+          "ja": "窓側の席を予約しましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "book"
+            },
+            {
+              "type": "object",
+              "text": "a window seat"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "Did the taxi arrive yet?",
+          "ja": "タクシーはもう来ましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "the taxi"
+            },
+            {
+              "type": "verb",
+              "text": "arrive"
+            },
+            {
+              "type": "time",
+              "text": "yet"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Did you get my message?",
+          "ja": "私のメッセージは届きましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "get"
+            },
+            {
+              "type": "object",
+              "text": "my message"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "Did they check your passport?",
+          "ja": "パスポートを確認されましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "they"
+            },
+            {
+              "type": "verb",
+              "text": "check"
+            },
+            {
+              "type": "object",
+              "text": "your passport"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "Did you book a table?",
+          "ja": "テーブルを予約しましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "book"
+            },
+            {
+              "type": "object",
+              "text": "a table"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title_ja": "5W1H → Do/Does/Did → 誰(何)が → どうする → 何を → どこで → いつ",
+      "title_en": "WH + Do/Does/Did + Subject + Verb …? (WH question)",
+      "grammar": "Question starting with what/where/when/why/who/how.",
+      "slots": [
+        "qword",
+        "do",
+        "subject",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "transportation",
+          "full": "What time does the next bus leave?",
+          "ja": "次のバスは何時に出ますか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "What time"
+            },
+            {
+              "type": "do",
+              "text": "does"
+            },
+            {
+              "type": "subject",
+              "text": "the next bus"
+            },
+            {
+              "type": "verb",
+              "text": "leave"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "Where did you put my luggage?",
+          "ja": "私の荷物はどこに置きましたか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "do",
+              "text": "did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "put"
+            },
+            {
+              "type": "object",
+              "text": "my luggage"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "What do you recommend?",
+          "ja": "おすすめは何ですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "What"
+            },
+            {
+              "type": "do",
+              "text": "do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "recommend"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Where do I check in?",
+          "ja": "どこでチェックインしますか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "do",
+              "text": "do"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "check in"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "How much did the taxi cost?",
+          "ja": "タクシーはいくらかかりましたか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "How much"
+            },
+            {
+              "type": "do",
+              "text": "did"
+            },
+            {
+              "type": "subject",
+              "text": "the taxi"
+            },
+            {
+              "type": "verb",
+              "text": "cost"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title_ja": "誰(何)が → 助動詞 → どうする → 何を → どこで → いつ",
+      "title_en": "Subject + Modal + Verb … (can/will/should)",
+      "grammar": "Add a modal (can, will, should, must) before the verb.",
+      "slots": [
+        "subject",
+        "aux",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "restaurant",
+          "full": "You should try the local food.",
+          "ja": "地元の料理を試してみるといいですよ。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "You"
+            },
+            {
+              "type": "aux",
+              "text": "should"
+            },
+            {
+              "type": "verb",
+              "text": "try"
+            },
+            {
+              "type": "object",
+              "text": "the local food"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "I will check out tomorrow morning.",
+          "ja": "明日の朝チェックアウトします。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "aux",
+              "text": "will"
+            },
+            {
+              "type": "verb",
+              "text": "check out"
+            },
+            {
+              "type": "time",
+              "text": "tomorrow morning"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "I can speak a little English.",
+          "ja": "私は少し英語が話せます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "aux",
+              "text": "can"
+            },
+            {
+              "type": "verb",
+              "text": "speak"
+            },
+            {
+              "type": "object",
+              "text": "a little English"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "I will stay for ten days.",
+          "ja": "私は10日間滞在します。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "aux",
+              "text": "will"
+            },
+            {
+              "type": "verb",
+              "text": "stay"
+            },
+            {
+              "type": "time",
+              "text": "for ten days"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "We can leave our bags at the desk.",
+          "ja": "私たちは荷物をフロントに預けられます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "aux",
+              "text": "can"
+            },
+            {
+              "type": "verb",
+              "text": "leave"
+            },
+            {
+              "type": "object",
+              "text": "our bags"
+            },
+            {
+              "type": "place",
+              "text": "at the desk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title_ja": "助動詞 → 誰(何)が → どうする → 何を → どこで → いつ？",
+      "title_en": "Modal + Subject + Verb …? (modal question)",
+      "grammar": "Polite request / permission with Can / Could / Would.",
+      "slots": [
+        "aux",
+        "subject",
+        "verb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "restaurant",
+          "full": "Can I get a glass of water?",
+          "ja": "お水を一杯いただけますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Can"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "get"
+            },
+            {
+              "type": "object",
+              "text": "a glass of water"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Could you call a taxi for me?",
+          "ja": "タクシーを呼んでいただけますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Could"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "call"
+            },
+            {
+              "type": "object",
+              "text": "a taxi"
+            },
+            {
+              "type": "place",
+              "text": "for me"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "Can you stop here?",
+          "ja": "ここで止まってもらえますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Can"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "stop"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "Could I see the menu?",
+          "ja": "メニューを見せていただけますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Could"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "see"
+            },
+            {
+              "type": "object",
+              "text": "the menu"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Can I have an extra towel?",
+          "ja": "タオルをもう一枚いただけますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Can"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "an extra towel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title_ja": "誰(何)が → be動詞 → 人/物/状態",
+      "title_en": "Subject + be + complement",
+      "grammar": "be-verb sentence: am / is / are + a noun or description.",
+      "slots": [
+        "subject",
+        "be",
+        "complement"
+      ],
+      "examples": [
+        {
+          "context": "immigration",
+          "full": "I am a tourist.",
+          "ja": "私は観光客です。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "be",
+              "text": "am"
+            },
+            {
+              "type": "complement",
+              "text": "a tourist"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "The hotel is near the station.",
+          "ja": "そのホテルは駅の近くです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The hotel"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "near the station"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "This is my seat.",
+          "ja": "ここは私の席です。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "my seat"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "The food is delicious.",
+          "ja": "料理はおいしいです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The food"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "delicious"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "The station is right over there.",
+          "ja": "駅はすぐそこです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The station"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "right over there"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title_ja": "誰(何)が → be動詞 → not → 人/物/状態",
+      "title_en": "Subject + be + not + complement",
+      "grammar": "Negative be-verb sentence: am not / is not / are not.",
+      "slots": [
+        "subject",
+        "be",
+        "not",
+        "complement"
+      ],
+      "examples": [
+        {
+          "context": "airplane",
+          "full": "This is not my seat.",
+          "ja": "ここは私の席ではありません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "my seat"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "The restaurant is not open yet.",
+          "ja": "そのレストランはまだ開いていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The restaurant"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "open yet"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "I am not ready to order yet.",
+          "ja": "まだ注文が決まっていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "be",
+              "text": "am"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "ready to order yet"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "The Wi-Fi is not working.",
+          "ja": "Wi-Fiがつながりません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The Wi-Fi"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "working"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "This is not the right stop.",
+          "ja": "ここは降りる駅ではありません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "the right stop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title_ja": "be動詞 → 誰(何)が → 人/物/状態？",
+      "title_en": "be + Subject + complement? (be question)",
+      "grammar": "Yes/No question with be: Is / Are + subject?",
+      "slots": [
+        "be",
+        "subject",
+        "complement"
+      ],
+      "examples": [
+        {
+          "context": "transportation",
+          "full": "Is this the train to downtown?",
+          "ja": "これは中心街行きの電車ですか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Is"
+            },
+            {
+              "type": "subject",
+              "text": "this"
+            },
+            {
+              "type": "complement",
+              "text": "the train to downtown"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "Are you ready to order?",
+          "ja": "ご注文はお決まりですか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Are"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "complement",
+              "text": "ready to order"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "Is this the line for visitors?",
+          "ja": "これは訪問者用の列ですか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Is"
+            },
+            {
+              "type": "subject",
+              "text": "this"
+            },
+            {
+              "type": "complement",
+              "text": "the line for visitors"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "Is breakfast included?",
+          "ja": "朝食は含まれていますか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Is"
+            },
+            {
+              "type": "subject",
+              "text": "breakfast"
+            },
+            {
+              "type": "complement",
+              "text": "included"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "Are these seats taken?",
+          "ja": "この席は誰か座っていますか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Are"
+            },
+            {
+              "type": "subject",
+              "text": "these seats"
+            },
+            {
+              "type": "complement",
+              "text": "taken"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title_ja": "5W1H → be動詞 → 誰(何)が → 人/物/状態？",
+      "title_en": "WH + be + Subject? (WH be-question)",
+      "grammar": "WH question with be: Where is…? / What time is…?",
+      "slots": [
+        "qword",
+        "be",
+        "subject",
+        "complement"
+      ],
+      "examples": [
+        {
+          "context": "immigration",
+          "full": "Where is the baggage claim?",
+          "ja": "手荷物受取所はどこですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "the baggage claim"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "What time is checkout?",
+          "ja": "チェックアウトは何時ですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "What time"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "checkout"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "How much is the fare?",
+          "ja": "運賃はいくらですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "How much"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "the fare"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "Where is the nearest bus stop?",
+          "ja": "一番近いバス停はどこですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "the nearest bus stop"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "How much is the total?",
+          "ja": "合計はいくらですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "How much"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "the total"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title_ja": "誰(何)が → どうする → 何を → (どうやって) → どこで → いつ",
+      "title_en": "Subject + Verb + Object + (how/manner) + Place + Time",
+      "grammar": "Add a manner phrase (by card, by hand, online) telling HOW, after the object.",
+      "slots": [
+        "subject",
+        "verb",
+        "object",
+        "manner",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "transportation",
+          "full": "I pay for the ticket by card at the station.",
+          "ja": "私は駅でカードでチケットを払います。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "pay for"
+            },
+            {
+              "type": "object",
+              "text": "the ticket"
+            },
+            {
+              "type": "manner",
+              "text": "by card"
+            },
+            {
+              "type": "place",
+              "text": "at the station"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "I book my tickets online every year.",
+          "ja": "私は毎年オンラインでチケットを予約します。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "book"
+            },
+            {
+              "type": "object",
+              "text": "my tickets"
+            },
+            {
+              "type": "manner",
+              "text": "online"
+            },
+            {
+              "type": "time",
+              "text": "every year"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "We carry our bags by hand at the airport.",
+          "ja": "私たちは空港で荷物を手で運びます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "verb",
+              "text": "carry"
+            },
+            {
+              "type": "object",
+              "text": "our bags"
+            },
+            {
+              "type": "manner",
+              "text": "by hand"
+            },
+            {
+              "type": "place",
+              "text": "at the airport"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "I pay the bill by credit card at the front desk.",
+          "ja": "私はフロントでクレジットカードで会計をします。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "pay"
+            },
+            {
+              "type": "object",
+              "text": "the bill"
+            },
+            {
+              "type": "manner",
+              "text": "by credit card"
+            },
+            {
+              "type": "place",
+              "text": "at the front desk"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "We send our luggage by courier to the hotel.",
+          "ja": "私たちは荷物を宅配便でホテルへ送ります。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "verb",
+              "text": "send"
+            },
+            {
+              "type": "object",
+              "text": "our luggage"
+            },
+            {
+              "type": "manner",
+              "text": "by courier"
+            },
+            {
+              "type": "place",
+              "text": "to the hotel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title_ja": "誰(何)が → どうする → 人 → 物 → どこで → いつ",
+      "title_en": "Subject + Verb + Person + Thing + Place + Time",
+      "grammar": "Two objects: give / bring / show / ask someone something.",
+      "slots": [
+        "subject",
+        "verb",
+        "person",
+        "thing",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "restaurant",
+          "full": "The waiter brought us the menu at the table.",
+          "ja": "ウェイターはテーブルで私たちにメニューを持ってきてくれました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The waiter"
+            },
+            {
+              "type": "verb",
+              "text": "brought"
+            },
+            {
+              "type": "person",
+              "text": "us"
+            },
+            {
+              "type": "thing",
+              "text": "the menu"
+            },
+            {
+              "type": "place",
+              "text": "at the table"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "The hotel gave us an upgrade at check-in.",
+          "ja": "ホテルはチェックインのときに私たちをアップグレードしてくれました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The hotel"
+            },
+            {
+              "type": "verb",
+              "text": "gave"
+            },
+            {
+              "type": "person",
+              "text": "us"
+            },
+            {
+              "type": "thing",
+              "text": "an upgrade"
+            },
+            {
+              "type": "place",
+              "text": "at check-in"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "I showed the officer my passport at the gate.",
+          "ja": "私はゲートで係官にパスポートを見せました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "showed"
+            },
+            {
+              "type": "person",
+              "text": "the officer"
+            },
+            {
+              "type": "thing",
+              "text": "my passport"
+            },
+            {
+              "type": "place",
+              "text": "at the gate"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "The server brings us water at the table.",
+          "ja": "店員はテーブルで私たちに水を持ってきます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The server"
+            },
+            {
+              "type": "verb",
+              "text": "brings"
+            },
+            {
+              "type": "person",
+              "text": "us"
+            },
+            {
+              "type": "thing",
+              "text": "water"
+            },
+            {
+              "type": "place",
+              "text": "at the table"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "The front desk gave me a map at check-in.",
+          "ja": "フロントはチェックインのときに私に地図をくれました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The front desk"
+            },
+            {
+              "type": "verb",
+              "text": "gave"
+            },
+            {
+              "type": "person",
+              "text": "me"
+            },
+            {
+              "type": "thing",
+              "text": "a map"
+            },
+            {
+              "type": "place",
+              "text": "at check-in"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title_ja": "誰(何)が → どうする → 人 → to どうする",
+      "title_en": "Subject + Verb + Person + to-do (want/ask someone to do)",
+      "grammar": "want / ask / tell someone TO do something.",
+      "slots": [
+        "subject",
+        "verb",
+        "person",
+        "toverb"
+      ],
+      "examples": [
+        {
+          "context": "transportation",
+          "full": "I want you to call a taxi.",
+          "ja": "私はあなたにタクシーを呼んでほしいです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "want"
+            },
+            {
+              "type": "person",
+              "text": "you"
+            },
+            {
+              "type": "toverb",
+              "text": "to call a taxi"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "The officer asked me to open my bag.",
+          "ja": "係官は私にかばんを開けるよう言いました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The officer"
+            },
+            {
+              "type": "verb",
+              "text": "asked"
+            },
+            {
+              "type": "person",
+              "text": "me"
+            },
+            {
+              "type": "toverb",
+              "text": "to open my bag"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "I asked the staff to keep my luggage.",
+          "ja": "私はスタッフに荷物を預かってもらうよう頼みました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "asked"
+            },
+            {
+              "type": "person",
+              "text": "the staff"
+            },
+            {
+              "type": "toverb",
+              "text": "to keep my luggage"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "I asked the driver to wait for me.",
+          "ja": "私は運転手に待ってもらうよう頼みました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "asked"
+            },
+            {
+              "type": "person",
+              "text": "the driver"
+            },
+            {
+              "type": "toverb",
+              "text": "to wait for me"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "I told the waiter to bring the check.",
+          "ja": "私はウェイターに会計を持ってくるよう言いました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "told"
+            },
+            {
+              "type": "person",
+              "text": "the waiter"
+            },
+            {
+              "type": "toverb",
+              "text": "to bring the check"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title_ja": "It is → 形容詞 → to どうする → 何を → どこで → いつ",
+      "title_en": "It is + adjective + to-do …",
+      "grammar": "It is [easy/hard/important] to do something.",
+      "slots": [
+        "frame",
+        "adj",
+        "toverb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "transportation",
+          "full": "It is hard to find a taxi here.",
+          "ja": "ここでタクシーを見つけるのは難しいです。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "hard"
+            },
+            {
+              "type": "toverb",
+              "text": "to find"
+            },
+            {
+              "type": "object",
+              "text": "a taxi"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "It is easy to get lost in the airport.",
+          "ja": "空港では道に迷いやすいです。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "easy"
+            },
+            {
+              "type": "toverb",
+              "text": "to get lost"
+            },
+            {
+              "type": "place",
+              "text": "in the airport"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "It is important to book a hotel in advance.",
+          "ja": "前もってホテルを予約することが大切です。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "important"
+            },
+            {
+              "type": "toverb",
+              "text": "to book"
+            },
+            {
+              "type": "object",
+              "text": "a hotel"
+            },
+            {
+              "type": "time",
+              "text": "in advance"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "It is easy to use the subway here.",
+          "ja": "ここでは地下鉄を使うのは簡単です。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "easy"
+            },
+            {
+              "type": "toverb",
+              "text": "to use"
+            },
+            {
+              "type": "object",
+              "text": "the subway"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "It is safe to leave your bags at the desk.",
+          "ja": "荷物をフロントに預けるのは安全です。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "safe"
+            },
+            {
+              "type": "toverb",
+              "text": "to leave"
+            },
+            {
+              "type": "object",
+              "text": "your bags"
+            },
+            {
+              "type": "place",
+              "text": "at the desk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title_ja": "It takes → 時間 → to どうする → 何を → どこで → いつ",
+      "title_en": "It takes + duration + to-do …",
+      "grammar": "It takes [amount of time] to do something.",
+      "slots": [
+        "frame",
+        "duration",
+        "toverb",
+        "object",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "hotel",
+          "full": "It takes ten minutes to walk to the hotel.",
+          "ja": "ホテルまで歩いて10分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "ten minutes"
+            },
+            {
+              "type": "toverb",
+              "text": "to walk"
+            },
+            {
+              "type": "place",
+              "text": "to the hotel"
+            }
+          ]
+        },
+        {
+          "context": "immigration",
+          "full": "It takes an hour to clear immigration at the airport.",
+          "ja": "空港で入国審査を終えるのに1時間かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "an hour"
+            },
+            {
+              "type": "toverb",
+              "text": "to clear"
+            },
+            {
+              "type": "object",
+              "text": "immigration"
+            },
+            {
+              "type": "place",
+              "text": "at the airport"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "It takes thirty minutes to find a taxi here.",
+          "ja": "ここでタクシーを見つけるのに30分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "thirty minutes"
+            },
+            {
+              "type": "toverb",
+              "text": "to find"
+            },
+            {
+              "type": "object",
+              "text": "a taxi"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "airplane",
+          "full": "It takes twenty minutes to board the plane.",
+          "ja": "飛行機に搭乗するのに20分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "twenty minutes"
+            },
+            {
+              "type": "toverb",
+              "text": "to board"
+            },
+            {
+              "type": "object",
+              "text": "the plane"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "It takes five minutes to buy a ticket at the machine.",
+          "ja": "券売機でチケットを買うのに5分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "five minutes"
+            },
+            {
+              "type": "toverb",
+              "text": "to buy"
+            },
+            {
+              "type": "object",
+              "text": "a ticket"
+            },
+            {
+              "type": "place",
+              "text": "at the machine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title_ja": "There is/are → 物/人 → in/on/at → どこで → いつ",
+      "title_en": "There is/are + thing/person + in/on/at + place + time",
+      "grammar": "Say something exists: There is (one) / There are (more than one).",
+      "slots": [
+        "frame",
+        "thing",
+        "prep",
+        "place",
+        "time"
+      ],
+      "examples": [
+        {
+          "context": "hotel",
+          "full": "There are two beds in the room.",
+          "ja": "部屋にはベッドが2つあります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There are"
+            },
+            {
+              "type": "thing",
+              "text": "two beds"
+            },
+            {
+              "type": "prep",
+              "text": "in"
+            },
+            {
+              "type": "place",
+              "text": "the room"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "There is a restaurant in the hotel.",
+          "ja": "ホテルの中にレストランがあります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There is"
+            },
+            {
+              "type": "thing",
+              "text": "a restaurant"
+            },
+            {
+              "type": "prep",
+              "text": "in"
+            },
+            {
+              "type": "place",
+              "text": "the hotel"
+            }
+          ]
+        },
+        {
+          "context": "transportation",
+          "full": "There is a taxi at the entrance now.",
+          "ja": "今、入口にタクシーがあります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There is"
+            },
+            {
+              "type": "thing",
+              "text": "a taxi"
+            },
+            {
+              "type": "prep",
+              "text": "at"
+            },
+            {
+              "type": "place",
+              "text": "the entrance"
+            },
+            {
+              "type": "time",
+              "text": "now"
+            }
+          ]
+        },
+        {
+          "context": "hotel",
+          "full": "There is a pool on the roof.",
+          "ja": "屋上にプールがあります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There is"
+            },
+            {
+              "type": "thing",
+              "text": "a pool"
+            },
+            {
+              "type": "prep",
+              "text": "on"
+            },
+            {
+              "type": "place",
+              "text": "the roof"
+            }
+          ]
+        },
+        {
+          "context": "restaurant",
+          "full": "There are some tables on the patio.",
+          "ja": "テラスにテーブルがいくつかあります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There are"
+            },
+            {
+              "type": "thing",
+              "text": "some tables"
+            },
+            {
+              "type": "prep",
+              "text": "on"
+            },
+            {
+              "type": "place",
+              "text": "the patio"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
