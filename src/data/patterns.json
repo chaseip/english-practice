@@ -127,6 +127,16 @@
       "id": "restaurant",
       "label": "Restaurant",
       "emoji": "🍽️"
+    },
+    {
+      "id": "shopping",
+      "label": "Shopping",
+      "emoji": "🛍️"
+    },
+    {
+      "id": "tourism",
+      "label": "Tourism",
+      "emoji": "🎟️"
     }
   ],
   "models": [
@@ -533,6 +543,156 @@
             {
               "type": "time",
               "text": "after the meal"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I buy a souvenir at the store every trip.",
+          "ja": "私は毎回お店でお土産を買います。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "buy"
+            },
+            {
+              "type": "object",
+              "text": "a souvenir"
+            },
+            {
+              "type": "place",
+              "text": "at the store"
+            },
+            {
+              "type": "time",
+              "text": "every trip"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "We accept all major cards at this register.",
+          "ja": "当店ではすべての主要カードが使えます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "verb",
+              "text": "accept"
+            },
+            {
+              "type": "object",
+              "text": "all major cards"
+            },
+            {
+              "type": "place",
+              "text": "at this register"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I pay with cash at the counter.",
+          "ja": "私はレジで現金で払います。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "pay with"
+            },
+            {
+              "type": "object",
+              "text": "cash"
+            },
+            {
+              "type": "place",
+              "text": "at the counter"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I buy a ticket at the museum every visit.",
+          "ja": "私は行くたびに美術館でチケットを買います。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "buy"
+            },
+            {
+              "type": "object",
+              "text": "a ticket"
+            },
+            {
+              "type": "place",
+              "text": "at the museum"
+            },
+            {
+              "type": "time",
+              "text": "every visit"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "We close the gallery at five o'clock.",
+          "ja": "ギャラリーは5時に閉まります。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "verb",
+              "text": "close"
+            },
+            {
+              "type": "object",
+              "text": "the gallery"
+            },
+            {
+              "type": "time",
+              "text": "at five o'clock"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I take photos at the tower in the morning.",
+          "ja": "私は朝にタワーで写真を撮ります。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "photos"
+            },
+            {
+              "type": "place",
+              "text": "at the tower"
+            },
+            {
+              "type": "time",
+              "text": "in the morning"
             }
           ]
         }
@@ -944,6 +1104,160 @@
               "text": "in my drink"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "I don't need a bag today.",
+          "ja": "今日は袋は要りません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "need"
+            },
+            {
+              "type": "object",
+              "text": "a bag"
+            },
+            {
+              "type": "time",
+              "text": "today"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "We don't accept returns after a week.",
+          "ja": "1週間を過ぎた返品は受け付けません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "accept"
+            },
+            {
+              "type": "object",
+              "text": "returns"
+            },
+            {
+              "type": "time",
+              "text": "after a week"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I don't have a rewards card.",
+          "ja": "ポイントカードは持っていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a rewards card"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I don't have a city pass.",
+          "ja": "私はシティパスを持っていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a city pass"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "We don't allow flash in the gallery.",
+          "ja": "ギャラリーではフラッシュは禁止です。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "allow"
+            },
+            {
+              "type": "object",
+              "text": "flash"
+            },
+            {
+              "type": "place",
+              "text": "in the gallery"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "We don't want a guided tour today.",
+          "ja": "今日はガイドツアーは要りません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "neg",
+              "text": "don't"
+            },
+            {
+              "type": "verb",
+              "text": "want"
+            },
+            {
+              "type": "object",
+              "text": "a guided tour"
+            },
+            {
+              "type": "time",
+              "text": "today"
+            }
+          ]
         }
       ]
     },
@@ -1299,6 +1613,144 @@
             {
               "type": "object",
               "text": "reservations"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "This coupon doesn't work on sale items.",
+          "ja": "このクーポンはセール品には使えません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This coupon"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "work"
+            },
+            {
+              "type": "place",
+              "text": "on sale items"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "The card reader doesn't take chips.",
+          "ja": "このカードリーダーはICチップに対応していません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The card reader"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "chips"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "The price doesn't include tax.",
+          "ja": "この値段には税が含まれていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The price"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "include"
+            },
+            {
+              "type": "object",
+              "text": "tax"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "This ticket doesn't include the tower.",
+          "ja": "このチケットにはタワーは含まれていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This ticket"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "include"
+            },
+            {
+              "type": "object",
+              "text": "the tower"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The museum doesn't open on Mondays.",
+          "ja": "美術館は月曜日は開きません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The museum"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "open"
+            },
+            {
+              "type": "time",
+              "text": "on Mondays"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The pass doesn't cover the boat tour.",
+          "ja": "このパスはボートツアーには使えません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The pass"
+            },
+            {
+              "type": "neg",
+              "text": "doesn't"
+            },
+            {
+              "type": "verb",
+              "text": "cover"
+            },
+            {
+              "type": "object",
+              "text": "the boat tour"
             }
           ]
         }
@@ -1686,6 +2138,144 @@
               "text": "tonight"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "I didn't get a receipt.",
+          "ja": "レシートをもらいませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "get"
+            },
+            {
+              "type": "object",
+              "text": "a receipt"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "The card didn't go through.",
+          "ja": "カードが通りませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The card"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "go through"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I didn't bring enough cash.",
+          "ja": "現金を十分に持ってきませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "bring"
+            },
+            {
+              "type": "object",
+              "text": "enough cash"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I didn't buy a ticket online.",
+          "ja": "オンラインでチケットを買いませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "buy"
+            },
+            {
+              "type": "object",
+              "text": "a ticket"
+            },
+            {
+              "type": "place",
+              "text": "online"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "We didn't see the main exhibit.",
+          "ja": "メインの展示を見ませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "see"
+            },
+            {
+              "type": "object",
+              "text": "the main exhibit"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The tour didn't start on time.",
+          "ja": "ツアーは時間どおりに始まりませんでした。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The tour"
+            },
+            {
+              "type": "neg",
+              "text": "didn't"
+            },
+            {
+              "type": "verb",
+              "text": "start"
+            },
+            {
+              "type": "time",
+              "text": "on time"
+            }
+          ]
         }
       ]
     },
@@ -2067,6 +2657,156 @@
               "text": "reservations"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "Do you have this in a larger size?",
+          "ja": "これの大きいサイズはありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "this in a larger size"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Do you have a rewards card with us?",
+          "ja": "当店のポイントカードはお持ちですか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a rewards card"
+            },
+            {
+              "type": "place",
+              "text": "with us"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Do you take cash?",
+          "ja": "現金は使えますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "cash"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Do you offer a student discount?",
+          "ja": "学生割引はありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "offer"
+            },
+            {
+              "type": "object",
+              "text": "a student discount"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Do you need an audio guide today?",
+          "ja": "今日はオーディオガイドは要りますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "need"
+            },
+            {
+              "type": "object",
+              "text": "an audio guide"
+            },
+            {
+              "type": "time",
+              "text": "today"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Do they allow photos inside?",
+          "ja": "中で写真は撮れますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Do"
+            },
+            {
+              "type": "subject",
+              "text": "they"
+            },
+            {
+              "type": "verb",
+              "text": "allow"
+            },
+            {
+              "type": "object",
+              "text": "photos"
+            },
+            {
+              "type": "place",
+              "text": "inside"
+            }
+          ]
         }
       ]
     },
@@ -2426,6 +3166,144 @@
             {
               "type": "object",
               "text": "meat"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Does this come in another color?",
+          "ja": "これは別の色もありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "this"
+            },
+            {
+              "type": "verb",
+              "text": "come"
+            },
+            {
+              "type": "place",
+              "text": "in another color"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Does the price include tax?",
+          "ja": "この値段は税込みですか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "the price"
+            },
+            {
+              "type": "verb",
+              "text": "include"
+            },
+            {
+              "type": "object",
+              "text": "tax"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Does your card have a chip?",
+          "ja": "お客様のカードにはICチップがありますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "your card"
+            },
+            {
+              "type": "verb",
+              "text": "have"
+            },
+            {
+              "type": "object",
+              "text": "a chip"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Does the ticket include the special exhibit?",
+          "ja": "チケットに特別展は含まれますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "the ticket"
+            },
+            {
+              "type": "verb",
+              "text": "include"
+            },
+            {
+              "type": "object",
+              "text": "the special exhibit"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Does the museum open on Sundays?",
+          "ja": "美術館は日曜日に開きますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "the museum"
+            },
+            {
+              "type": "verb",
+              "text": "open"
+            },
+            {
+              "type": "time",
+              "text": "on Sundays"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Does the tour start here?",
+          "ja": "ツアーはここから始まりますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Does"
+            },
+            {
+              "type": "subject",
+              "text": "the tour"
+            },
+            {
+              "type": "verb",
+              "text": "start"
+            },
+            {
+              "type": "place",
+              "text": "here"
             }
           ]
         }
@@ -2791,6 +3669,144 @@
             {
               "type": "object",
               "text": "the check"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Did you find everything okay?",
+          "ja": "ほしいものは全部見つかりましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "find"
+            },
+            {
+              "type": "object",
+              "text": "everything okay"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Did you want a bag?",
+          "ja": "袋はご利用になりますか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "want"
+            },
+            {
+              "type": "object",
+              "text": "a bag"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Did the discount apply?",
+          "ja": "割引は適用されましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "the discount"
+            },
+            {
+              "type": "verb",
+              "text": "apply"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Did you buy your ticket already?",
+          "ja": "もうチケットを買いましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "buy"
+            },
+            {
+              "type": "object",
+              "text": "your ticket"
+            },
+            {
+              "type": "time",
+              "text": "already"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Did the tour include the garden?",
+          "ja": "ツアーに庭園は含まれていましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "the tour"
+            },
+            {
+              "type": "verb",
+              "text": "include"
+            },
+            {
+              "type": "object",
+              "text": "the garden"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Did you enjoy the exhibit?",
+          "ja": "展示は楽しめましたか？",
+          "cells": [
+            {
+              "type": "do",
+              "text": "Did"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "enjoy"
+            },
+            {
+              "type": "object",
+              "text": "the exhibit"
             }
           ]
         }
@@ -3169,6 +4185,152 @@
             {
               "type": "verb",
               "text": "pay"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "How would you like to pay?",
+          "ja": "お支払いはどうなさいますか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "How"
+            },
+            {
+              "type": "do",
+              "text": "would"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "like to pay"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Where do I find the fitting rooms?",
+          "ja": "試着室はどこにありますか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "do",
+              "text": "do"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "find"
+            },
+            {
+              "type": "object",
+              "text": "the fitting rooms"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "How much does this cost?",
+          "ja": "これはいくらですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "How much"
+            },
+            {
+              "type": "do",
+              "text": "does"
+            },
+            {
+              "type": "subject",
+              "text": "this"
+            },
+            {
+              "type": "verb",
+              "text": "cost"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "What time does the museum open?",
+          "ja": "美術館は何時に開きますか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "What time"
+            },
+            {
+              "type": "do",
+              "text": "does"
+            },
+            {
+              "type": "subject",
+              "text": "the museum"
+            },
+            {
+              "type": "verb",
+              "text": "open"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Where do I buy tickets?",
+          "ja": "チケットはどこで買いますか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "do",
+              "text": "do"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "buy"
+            },
+            {
+              "type": "object",
+              "text": "tickets"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "What time does the tour start?",
+          "ja": "ツアーは何時に始まりますか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "What time"
+            },
+            {
+              "type": "do",
+              "text": "does"
+            },
+            {
+              "type": "subject",
+              "text": "the tour"
+            },
+            {
+              "type": "verb",
+              "text": "start"
             }
           ]
         }
@@ -3568,6 +4730,152 @@
               "text": "tonight"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "I will take this one.",
+          "ja": "これにします。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "aux",
+              "text": "will"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "this one"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "You can pay at the register.",
+          "ja": "レジでお支払いいただけます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "You"
+            },
+            {
+              "type": "aux",
+              "text": "can"
+            },
+            {
+              "type": "verb",
+              "text": "pay"
+            },
+            {
+              "type": "place",
+              "text": "at the register"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I can pay with a card.",
+          "ja": "カードで払えます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "aux",
+              "text": "can"
+            },
+            {
+              "type": "verb",
+              "text": "pay with"
+            },
+            {
+              "type": "object",
+              "text": "a card"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "You can take photos here.",
+          "ja": "ここで写真を撮ってもいいですよ。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "You"
+            },
+            {
+              "type": "aux",
+              "text": "can"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "photos"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "We should visit the museum first.",
+          "ja": "まず美術館へ行ったほうがいいです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "aux",
+              "text": "should"
+            },
+            {
+              "type": "verb",
+              "text": "visit"
+            },
+            {
+              "type": "object",
+              "text": "the museum"
+            },
+            {
+              "type": "time",
+              "text": "first"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I will join the next tour.",
+          "ja": "次のツアーに参加します。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "aux",
+              "text": "will"
+            },
+            {
+              "type": "verb",
+              "text": "join"
+            },
+            {
+              "type": "object",
+              "text": "the next tour"
+            }
+          ]
         }
       ]
     },
@@ -3945,6 +5253,148 @@
               "text": "by the window"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "Can I try this on?",
+          "ja": "これを試着できますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Can"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "try on"
+            },
+            {
+              "type": "object",
+              "text": "this"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Could you gift-wrap this?",
+          "ja": "これをギフト包装してもらえますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Could"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "gift-wrap"
+            },
+            {
+              "type": "object",
+              "text": "this"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Can I get a receipt?",
+          "ja": "レシートをもらえますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Can"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "get"
+            },
+            {
+              "type": "object",
+              "text": "a receipt"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Can I take a picture here?",
+          "ja": "ここで写真を撮ってもいいですか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Can"
+            },
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "a picture"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Could you take our photo?",
+          "ja": "私たちの写真を撮ってもらえますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Could"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "verb",
+              "text": "take"
+            },
+            {
+              "type": "object",
+              "text": "our photo"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Can we join the tour?",
+          "ja": "ツアーに参加できますか？",
+          "cells": [
+            {
+              "type": "aux",
+              "text": "Can"
+            },
+            {
+              "type": "subject",
+              "text": "we"
+            },
+            {
+              "type": "verb",
+              "text": "join"
+            },
+            {
+              "type": "object",
+              "text": "the tour"
+            }
+          ]
         }
       ]
     },
@@ -4241,6 +5691,120 @@
             {
               "type": "complement",
               "text": "by the window"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "This shirt is on sale.",
+          "ja": "このシャツはセール中です。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This shirt"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "on sale"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Your total is forty dollars.",
+          "ja": "合計は40ドルです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "Your total"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "forty dollars"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "The fitting rooms are over there.",
+          "ja": "試着室はあちらです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The fitting rooms"
+            },
+            {
+              "type": "be",
+              "text": "are"
+            },
+            {
+              "type": "complement",
+              "text": "over there"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The museum is free on Fridays.",
+          "ja": "美術館は金曜日は無料です。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The museum"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "free on Fridays"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The entrance is around the corner.",
+          "ja": "入口は角を曲がったところです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The entrance"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "around the corner"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The tour is two hours long.",
+          "ja": "ツアーは2時間です。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The tour"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "complement",
+              "text": "two hours long"
             }
           ]
         }
@@ -4602,6 +6166,144 @@
               "text": "what I ordered"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "This item is not on sale.",
+          "ja": "この商品はセール対象ではありません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This item"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "on sale"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Your card is not working.",
+          "ja": "お客様のカードが使えません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "Your card"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "working"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "The price is not correct.",
+          "ja": "この値段は正しくありません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The price"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "correct"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The exhibit is not open today.",
+          "ja": "その展示は今日は開いていません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The exhibit"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "open today"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Photos are not allowed inside.",
+          "ja": "中での写真撮影は禁止です。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "Photos"
+            },
+            {
+              "type": "be",
+              "text": "are"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "allowed inside"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "This ticket is not valid today.",
+          "ja": "このチケットは今日は使えません。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "This ticket"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "not",
+              "text": "not"
+            },
+            {
+              "type": "complement",
+              "text": "valid today"
+            }
+          ]
         }
       ]
     },
@@ -4898,6 +6600,120 @@
             {
               "type": "complement",
               "text": "still open"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Is this on sale?",
+          "ja": "これはセール中ですか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Is"
+            },
+            {
+              "type": "subject",
+              "text": "this"
+            },
+            {
+              "type": "complement",
+              "text": "on sale"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Are you paying by card?",
+          "ja": "カードでのお支払いですか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Are"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "complement",
+              "text": "paying by card"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Is the receipt in the bag?",
+          "ja": "レシートは袋の中ですか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Is"
+            },
+            {
+              "type": "subject",
+              "text": "the receipt"
+            },
+            {
+              "type": "complement",
+              "text": "in the bag"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Is the museum open today?",
+          "ja": "美術館は今日開いていますか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Is"
+            },
+            {
+              "type": "subject",
+              "text": "the museum"
+            },
+            {
+              "type": "complement",
+              "text": "open today"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Is photography allowed here?",
+          "ja": "ここで写真撮影はできますか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Is"
+            },
+            {
+              "type": "subject",
+              "text": "photography"
+            },
+            {
+              "type": "complement",
+              "text": "allowed here"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Are you here for the tour?",
+          "ja": "ツアーにご参加ですか？",
+          "cells": [
+            {
+              "type": "be",
+              "text": "Are"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            },
+            {
+              "type": "complement",
+              "text": "here for the tour"
             }
           ]
         }
@@ -5197,6 +7013,120 @@
             {
               "type": "subject",
               "text": "today's special"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "How much is this?",
+          "ja": "これはいくらですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "How much"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "this"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "Where is the register?",
+          "ja": "レジはどこですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "the register"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "What size are you?",
+          "ja": "サイズはおいくつですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "What size"
+            },
+            {
+              "type": "be",
+              "text": "are"
+            },
+            {
+              "type": "subject",
+              "text": "you"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "How much is admission?",
+          "ja": "入場料はいくらですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "How much"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "admission"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "Where is the entrance?",
+          "ja": "入口はどこですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "Where"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "the entrance"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "What time is the next tour?",
+          "ja": "次のツアーは何時ですか？",
+          "cells": [
+            {
+              "type": "qword",
+              "text": "What time"
+            },
+            {
+              "type": "be",
+              "text": "is"
+            },
+            {
+              "type": "subject",
+              "text": "the next tour"
             }
           ]
         }
@@ -5620,6 +7550,168 @@
               "text": "at the counter"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "I pay for the gift by card at the register.",
+          "ja": "私はレジでカードでプレゼントを払います。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "pay for"
+            },
+            {
+              "type": "object",
+              "text": "the gift"
+            },
+            {
+              "type": "manner",
+              "text": "by card"
+            },
+            {
+              "type": "place",
+              "text": "at the register"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I buy my souvenirs online before the trip.",
+          "ja": "私は旅行前にオンラインでお土産を買います。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "buy"
+            },
+            {
+              "type": "object",
+              "text": "my souvenirs"
+            },
+            {
+              "type": "manner",
+              "text": "online"
+            },
+            {
+              "type": "time",
+              "text": "before the trip"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "We wrap your gifts by hand at the counter.",
+          "ja": "当店ではカウンターで手作業でギフトを包みます。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "verb",
+              "text": "wrap"
+            },
+            {
+              "type": "object",
+              "text": "your gifts"
+            },
+            {
+              "type": "manner",
+              "text": "by hand"
+            },
+            {
+              "type": "place",
+              "text": "at the counter"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I book my tickets online before the visit.",
+          "ja": "私は訪問前にオンラインでチケットを予約します。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "book"
+            },
+            {
+              "type": "object",
+              "text": "my tickets"
+            },
+            {
+              "type": "manner",
+              "text": "online"
+            },
+            {
+              "type": "time",
+              "text": "before the visit"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I pay the admission by card at the entrance.",
+          "ja": "私は入口でカードで入場料を払います。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "pay"
+            },
+            {
+              "type": "object",
+              "text": "the admission"
+            },
+            {
+              "type": "manner",
+              "text": "by card"
+            },
+            {
+              "type": "place",
+              "text": "at the entrance"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "We see the exhibits on foot at the museum.",
+          "ja": "私たちは美術館を徒歩で展示を見て回ります。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "We"
+            },
+            {
+              "type": "verb",
+              "text": "see"
+            },
+            {
+              "type": "object",
+              "text": "the exhibits"
+            },
+            {
+              "type": "manner",
+              "text": "on foot"
+            },
+            {
+              "type": "place",
+              "text": "at the museum"
+            }
+          ]
         }
       ]
     },
@@ -6041,6 +8133,168 @@
               "text": "at the counter"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "The cashier gave me a receipt at the register.",
+          "ja": "レジ係はレジで私に領収書をくれました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The cashier"
+            },
+            {
+              "type": "verb",
+              "text": "gave"
+            },
+            {
+              "type": "person",
+              "text": "me"
+            },
+            {
+              "type": "thing",
+              "text": "a receipt"
+            },
+            {
+              "type": "place",
+              "text": "at the register"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "The clerk showed me a smaller size in the store.",
+          "ja": "店員は店内で私に小さいサイズを見せてくれました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The clerk"
+            },
+            {
+              "type": "verb",
+              "text": "showed"
+            },
+            {
+              "type": "person",
+              "text": "me"
+            },
+            {
+              "type": "thing",
+              "text": "a smaller size"
+            },
+            {
+              "type": "place",
+              "text": "in the store"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I gave the cashier my coupon at the counter.",
+          "ja": "私はカウンターでレジ係にクーポンを渡しました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "gave"
+            },
+            {
+              "type": "person",
+              "text": "the cashier"
+            },
+            {
+              "type": "thing",
+              "text": "my coupon"
+            },
+            {
+              "type": "place",
+              "text": "at the counter"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The staff gave us a map at the entrance.",
+          "ja": "スタッフは入口で私たちに地図をくれました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The staff"
+            },
+            {
+              "type": "verb",
+              "text": "gave"
+            },
+            {
+              "type": "person",
+              "text": "us"
+            },
+            {
+              "type": "thing",
+              "text": "a map"
+            },
+            {
+              "type": "place",
+              "text": "at the entrance"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The guide showed us the main hall at the museum.",
+          "ja": "ガイドは美術館で私たちにメインホールを見せてくれました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The guide"
+            },
+            {
+              "type": "verb",
+              "text": "showed"
+            },
+            {
+              "type": "person",
+              "text": "us"
+            },
+            {
+              "type": "thing",
+              "text": "the main hall"
+            },
+            {
+              "type": "place",
+              "text": "at the museum"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I showed the clerk my pass at the gate.",
+          "ja": "私はゲートで係員にパスを見せました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "showed"
+            },
+            {
+              "type": "person",
+              "text": "the clerk"
+            },
+            {
+              "type": "thing",
+              "text": "my pass"
+            },
+            {
+              "type": "place",
+              "text": "at the gate"
+            }
+          ]
         }
       ]
     },
@@ -6398,6 +8652,144 @@
             {
               "type": "toverb",
               "text": "to make it mild"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I asked the clerk to find my size.",
+          "ja": "私は店員にサイズを探してもらうよう頼みました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "asked"
+            },
+            {
+              "type": "person",
+              "text": "the clerk"
+            },
+            {
+              "type": "toverb",
+              "text": "to find my size"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "The cashier asked me to enter my PIN.",
+          "ja": "レジ係は私に暗証番号を入力するよう言いました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The cashier"
+            },
+            {
+              "type": "verb",
+              "text": "asked"
+            },
+            {
+              "type": "person",
+              "text": "me"
+            },
+            {
+              "type": "toverb",
+              "text": "to enter my PIN"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "I want the store to hold this item.",
+          "ja": "私はお店にこの商品を取り置いてほしいです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "want"
+            },
+            {
+              "type": "person",
+              "text": "the store"
+            },
+            {
+              "type": "toverb",
+              "text": "to hold this item"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I asked the guide to slow down.",
+          "ja": "私はガイドにゆっくり話してもらうよう頼みました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "asked"
+            },
+            {
+              "type": "person",
+              "text": "the guide"
+            },
+            {
+              "type": "toverb",
+              "text": "to slow down"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "The staff told us to keep our tickets.",
+          "ja": "スタッフは私たちにチケットを持っておくよう言いました。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "The staff"
+            },
+            {
+              "type": "verb",
+              "text": "told"
+            },
+            {
+              "type": "person",
+              "text": "us"
+            },
+            {
+              "type": "toverb",
+              "text": "to keep our tickets"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "I want the guide to take our photo.",
+          "ja": "私はガイドに写真を撮ってほしいです。",
+          "cells": [
+            {
+              "type": "subject",
+              "text": "I"
+            },
+            {
+              "type": "verb",
+              "text": "want"
+            },
+            {
+              "type": "person",
+              "text": "the guide"
+            },
+            {
+              "type": "toverb",
+              "text": "to take our photo"
             }
           ]
         }
@@ -6797,6 +9189,156 @@
               "text": "the local food"
             }
           ]
+        },
+        {
+          "context": "shopping",
+          "full": "It is easy to pay at the register.",
+          "ja": "レジで払うのは簡単です。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "easy"
+            },
+            {
+              "type": "toverb",
+              "text": "to pay"
+            },
+            {
+              "type": "place",
+              "text": "at the register"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "It is hard to find my size here.",
+          "ja": "ここで私のサイズを見つけるのは難しいです。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "hard"
+            },
+            {
+              "type": "toverb",
+              "text": "to find"
+            },
+            {
+              "type": "object",
+              "text": "my size"
+            },
+            {
+              "type": "place",
+              "text": "here"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "It is cheap to buy souvenirs at the market.",
+          "ja": "市場でお土産を買うのは安いです。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "cheap"
+            },
+            {
+              "type": "toverb",
+              "text": "to buy"
+            },
+            {
+              "type": "object",
+              "text": "souvenirs"
+            },
+            {
+              "type": "place",
+              "text": "at the market"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "It is fun to visit the museum.",
+          "ja": "美術館を訪れるのは楽しいです。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "fun"
+            },
+            {
+              "type": "toverb",
+              "text": "to visit"
+            },
+            {
+              "type": "object",
+              "text": "the museum"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "It is important to keep your ticket.",
+          "ja": "チケットを持っておくことが大切です。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "important"
+            },
+            {
+              "type": "toverb",
+              "text": "to keep"
+            },
+            {
+              "type": "object",
+              "text": "your ticket"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "It is easy to book tickets online.",
+          "ja": "オンラインでチケットを予約するのは簡単です。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It is"
+            },
+            {
+              "type": "adj",
+              "text": "easy"
+            },
+            {
+              "type": "toverb",
+              "text": "to book"
+            },
+            {
+              "type": "object",
+              "text": "tickets"
+            },
+            {
+              "type": "place",
+              "text": "online"
+            }
+          ]
         }
       ]
     },
@@ -7164,6 +9706,144 @@
             {
               "type": "object",
               "text": "the menu"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "It takes five minutes to check out.",
+          "ja": "会計に5分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "five minutes"
+            },
+            {
+              "type": "toverb",
+              "text": "to check out"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "It takes a minute to wrap the gift.",
+          "ja": "ギフトを包むのに1分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "a minute"
+            },
+            {
+              "type": "toverb",
+              "text": "to wrap"
+            },
+            {
+              "type": "object",
+              "text": "the gift"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "It takes ten minutes to try on the clothes.",
+          "ja": "服を試着するのに10分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "ten minutes"
+            },
+            {
+              "type": "toverb",
+              "text": "to try on"
+            },
+            {
+              "type": "object",
+              "text": "the clothes"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "It takes an hour to see the museum.",
+          "ja": "美術館を見るのに1時間かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "an hour"
+            },
+            {
+              "type": "toverb",
+              "text": "to see"
+            },
+            {
+              "type": "object",
+              "text": "the museum"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "It takes two hours to finish the tour.",
+          "ja": "ツアーを終えるのに2時間かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "two hours"
+            },
+            {
+              "type": "toverb",
+              "text": "to finish"
+            },
+            {
+              "type": "object",
+              "text": "the tour"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "It takes twenty minutes to buy tickets at the gate.",
+          "ja": "ゲートでチケットを買うのに20分かかります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "It takes"
+            },
+            {
+              "type": "duration",
+              "text": "twenty minutes"
+            },
+            {
+              "type": "toverb",
+              "text": "to buy"
+            },
+            {
+              "type": "object",
+              "text": "tickets"
+            },
+            {
+              "type": "place",
+              "text": "at the gate"
             }
           ]
         }
@@ -7540,6 +10220,152 @@
             {
               "type": "time",
               "text": "tonight"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "There is a sale at the store today.",
+          "ja": "今日は店でセールがあります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There is"
+            },
+            {
+              "type": "thing",
+              "text": "a sale"
+            },
+            {
+              "type": "prep",
+              "text": "at"
+            },
+            {
+              "type": "place",
+              "text": "the store"
+            },
+            {
+              "type": "time",
+              "text": "today"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "There are fitting rooms in the back.",
+          "ja": "奥に試着室があります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There are"
+            },
+            {
+              "type": "thing",
+              "text": "fitting rooms"
+            },
+            {
+              "type": "prep",
+              "text": "in"
+            },
+            {
+              "type": "place",
+              "text": "the back"
+            }
+          ]
+        },
+        {
+          "context": "shopping",
+          "full": "There is a discount on this item.",
+          "ja": "この商品は割引があります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There is"
+            },
+            {
+              "type": "thing",
+              "text": "a discount"
+            },
+            {
+              "type": "prep",
+              "text": "on"
+            },
+            {
+              "type": "place",
+              "text": "this item"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "There is a gift shop at the museum.",
+          "ja": "美術館にお土産店があります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There is"
+            },
+            {
+              "type": "thing",
+              "text": "a gift shop"
+            },
+            {
+              "type": "prep",
+              "text": "at"
+            },
+            {
+              "type": "place",
+              "text": "the museum"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "There are many tourists at the tower today.",
+          "ja": "今日はタワーに観光客がたくさんいます。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There are"
+            },
+            {
+              "type": "thing",
+              "text": "many tourists"
+            },
+            {
+              "type": "prep",
+              "text": "at"
+            },
+            {
+              "type": "place",
+              "text": "the tower"
+            },
+            {
+              "type": "time",
+              "text": "today"
+            }
+          ]
+        },
+        {
+          "context": "tourism",
+          "full": "There is a map at the entrance.",
+          "ja": "入口に地図があります。",
+          "cells": [
+            {
+              "type": "frame",
+              "text": "There is"
+            },
+            {
+              "type": "thing",
+              "text": "a map"
+            },
+            {
+              "type": "prep",
+              "text": "at"
+            },
+            {
+              "type": "place",
+              "text": "the entrance"
             }
           ]
         }
