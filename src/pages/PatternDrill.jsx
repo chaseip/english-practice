@@ -5,6 +5,7 @@ import SlotDrill from '../components/SlotDrill'
 import SlotTable from '../components/SlotTable'
 import { useSpeech } from '../hooks/useSpeech'
 import { useProgress } from '../hooks/useProgress'
+import { useContextFilter } from '../hooks/useContextFilter'
 
 export default function PatternDrill() {
   const { id } = useParams()
@@ -13,7 +14,7 @@ export default function PatternDrill() {
   const { speak } = useSpeech()
   const { practiced, markPracticed } = useProgress()
 
-  const [contextFilter, setContextFilter] = useState(null)
+  const [contextFilter, setContextFilter] = useContextFilter()
   const [exIndex, setExIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
 
@@ -26,9 +27,11 @@ export default function PatternDrill() {
     )
   }
 
-  const examples = contextFilter
+  const filtered = contextFilter
     ? model.examples.filter(e => e.context === contextFilter)
     : model.examples
+  // Safety: if the sticky filter has no examples for this pattern, show all.
+  const examples = filtered.length > 0 ? filtered : model.examples
 
   const safeIndex = Math.min(exIndex, examples.length - 1)
   const example = examples[safeIndex]
@@ -85,10 +88,10 @@ export default function PatternDrill() {
       </div>
 
       {/* Context filter */}
-      <div className="flex gap-1.5 px-4 py-2 overflow-x-auto bg-white border-b no-scrollbar">
+      <div className="flex flex-wrap gap-1.5 px-4 py-2 bg-white border-b">
         <button
           onClick={() => changeContext(null)}
-          className={`px-3 py-1 rounded-full text-xs font-medium shrink-0 transition-colors ${
+          className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
             contextFilter === null ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-700'
           }`}
         >
@@ -100,7 +103,7 @@ export default function PatternDrill() {
             <button
               key={c.id}
               onClick={() => changeContext(contextFilter === c.id ? null : c.id)}
-              className={`px-3 py-1 rounded-full text-xs font-medium shrink-0 transition-colors ${
+              className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
                 contextFilter === c.id ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-700'
               }`}
             >

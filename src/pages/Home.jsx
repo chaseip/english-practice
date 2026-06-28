@@ -1,12 +1,12 @@
-import { useState } from 'react'
 import { models } from '../lib/slots'
 import PatternCard from '../components/PatternCard'
 import ContextFilter from '../components/ContextFilter'
 import ProgressBar from '../components/ProgressBar'
 import { useProgress } from '../hooks/useProgress'
+import { useContextFilter } from '../hooks/useContextFilter'
 
 export default function Home() {
-  const [context, setContext] = useState(null)
+  const [context, setContext] = useContextFilter()
   const { practiced, reset } = useProgress()
 
   const filtered = context
