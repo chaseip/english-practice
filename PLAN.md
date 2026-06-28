@@ -118,7 +118,7 @@ Key rules for the build:
 - **Color a cell** by looking up `slotTypes[cell.type].color`. Slot headers use the same lookup.
 - Examples may **omit optional slots** (not every sentence has a place or time) — render only the cells present.
 - **`full`** is the clean, capitalized, punctuated sentence — use it for display and `speak(full)`.
-- Content: **20 patterns × 5 travel examples = 100 sentences**, each with Japanese.
+- Content: **20 patterns × 15 travel examples = 300 sentences**, each with Japanese. Every (pattern × context) combination has at least 3 sentences, so any filter on any pattern always has enough to drill.
 
 ## 7. Suggested repo structure
 
