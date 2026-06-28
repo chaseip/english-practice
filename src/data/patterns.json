@@ -598,8 +598,8 @@
         },
         {
           "context": "shopping",
-          "full": "I pay with cash at the counter.",
-          "ja": "私はレジで現金で払います。",
+          "full": "I pay the bill at the register.",
+          "ja": "私はレジで会計を払います。",
           "cells": [
             {
               "type": "subject",
@@ -607,15 +607,15 @@
             },
             {
               "type": "verb",
-              "text": "pay with"
+              "text": "pay"
             },
             {
               "type": "object",
-              "text": "cash"
+              "text": "the bill"
             },
             {
               "type": "place",
-              "text": "at the counter"
+              "text": "at the register"
             }
           ]
         },
@@ -2683,7 +2683,7 @@
         },
         {
           "context": "shopping",
-          "full": "Do you have a rewards card with us?",
+          "full": "Do you have a rewards card?",
           "ja": "当店のポイントカードはお持ちですか？",
           "cells": [
             {
@@ -2701,10 +2701,6 @@
             {
               "type": "object",
               "text": "a rewards card"
-            },
-            {
-              "type": "place",
-              "text": "with us"
             }
           ]
         },
