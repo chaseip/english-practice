@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 120%;
+}
+
 * {
   -webkit-tap-highlight-color: transparent;
 }
