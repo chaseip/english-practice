@@ -6,10 +6,11 @@ export function useSpeech() {
   useEffect(() => {
     function loadVoice() {
       const voices = window.speechSynthesis.getVoices()
+      // Only ever use an English voice. If none is installed, leave it null so
+      // we don't force a Japanese voice to mispronounce English text.
       voiceRef.current =
         voices.find(v => v.lang === 'en-US') ??
-        voices.find(v => v.lang.startsWith('en')) ??
-        voices[0] ??
+        voices.find(v => v.lang && v.lang.toLowerCase().startsWith('en')) ??
         null
     }
     loadVoice()

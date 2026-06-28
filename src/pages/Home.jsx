@@ -2,6 +2,7 @@ import { models } from '../lib/slots'
 import PatternCard from '../components/PatternCard'
 import ContextFilter from '../components/ContextFilter'
 import ProgressBar from '../components/ProgressBar'
+import VoiceHelp from '../components/VoiceHelp'
 import { useProgress } from '../hooks/useProgress'
 import { useContextFilter } from '../hooks/useContextFilter'
 
@@ -37,6 +38,8 @@ export default function Home() {
       </div>
 
       <ContextFilter active={context} onChange={setContext} />
+
+      <VoiceHelp />
 
       <div className="px-4 pb-10 space-y-3">
         {filtered.map(model => (
