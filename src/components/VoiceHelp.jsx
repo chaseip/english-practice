@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { findEnglishVoice } from '../hooks/useSpeech'
 
 // Detects whether the device has an English text-to-speech voice. If not, the
 // app's audio will mispronounce English, so we surface install instructions
@@ -14,12 +15,25 @@ export default function VoiceHelp() {
     }
     function check() {
       const voices = window.speechSynthesis.getVoices()
-      if (voices.length === 0) return // not ready yet; voiceschanged will fire
-      setHasEnglish(voices.some(v => v.lang && v.lang.toLowerCase().startsWith('en')))
+      if (voices.length === 0) return false // not ready yet
+      setHasEnglish(findEnglishVoice(voices) !== null)
+      return true
     }
-    check()
+    // iOS Safari fills the voice list asynchronously and often never fires
+    // voiceschanged, so poll for a few seconds as a fallback.
+    let attempts = 0
+    let intervalId = null
+    if (!check()) {
+      intervalId = setInterval(() => {
+        attempts += 1
+        if (check() || attempts >= 20) clearInterval(intervalId)
+      }, 250)
+    }
     window.speechSynthesis.addEventListener('voiceschanged', check)
-    return () => window.speechSynthesis.removeEventListener('voiceschanged', check)
+    return () => {
+      if (intervalId) clearInterval(intervalId)
+      window.speechSynthesis.removeEventListener('voiceschanged', check)
+    }
   }, [])
 
   // If no English voice is found, open the panel automatically.
@@ -33,10 +47,7 @@ export default function VoiceHelp() {
     const u = new SpeechSynthesisUtterance('Hello! This is American English.')
     u.lang = 'en-US'
     u.rate = 0.9
-    const voices = window.speechSynthesis.getVoices()
-    const v =
-      voices.find(x => x.lang === 'en-US') ??
-      voices.find(x => x.lang && x.lang.toLowerCase().startsWith('en'))
+    const v = findEnglishVoice(window.speechSynthesis.getVoices())
     if (v) u.voice = v
     window.speechSynthesis.speak(u)
   }
