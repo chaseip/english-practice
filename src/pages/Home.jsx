@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { models } from '../lib/slots'
 import PatternCard from '../components/PatternCard'
 import ContextFilter from '../components/ContextFilter'
@@ -41,7 +42,22 @@ export default function Home() {
 
       <VoiceHelp />
 
-      <div className="px-4 pb-10 space-y-3">
+      {/* Link to the interjections quiz section */}
+      <div className="px-4 pt-3">
+        <Link
+          to="/interjections"
+          className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 active:bg-gray-50 transition-colors"
+        >
+          <span className="text-2xl">💬</span>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold text-gray-900">アメリカの相づち20選</p>
+            <p className="text-xs text-gray-500">American interjections — choose the meaning</p>
+          </div>
+          <span className="text-gray-300 text-lg">›</span>
+        </Link>
+      </div>
+
+      <div className="px-4 pt-3 pb-10 space-y-3">
         {filtered.map(model => (
           <PatternCard
             key={model.id}
