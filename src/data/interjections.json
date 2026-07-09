@@ -1,0 +1,165 @@
+{
+  "_comment": "20 common American interjections & idioms (アメリカの相づち・感嘆表現20選). These are reflexive expressions that often have no clean Japanese 1:1 equivalent. Used for a 'choose the meaning' multiple-choice quiz: `meaning` is the correct answer; distractors are drawn from the other items' `meaning` fields. `note` is an optional short nuance tip shown after answering.",
+  "items": [
+    {
+      "id": 1,
+      "phrase": "Oh man…",
+      "meaning": "あ〜あ、まいったな（落胆や興奮）",
+      "example": "Oh man, we missed the train.",
+      "example_ja": "あ〜あ、電車に乗り遅れちゃった。",
+      "note": "トーン次第で「がっかり」にも「うわ、すごい！」にもなる。"
+    },
+    {
+      "id": 2,
+      "phrase": "No way!",
+      "meaning": "まさか！／絶対イヤ！",
+      "example": "No way, you won the lottery?",
+      "example_ja": "まさか、宝くじ当たったの？",
+      "note": "驚き（信じられない）にも、強い拒否（絶対無理）にも使う。"
+    },
+    {
+      "id": 3,
+      "phrase": "My bad.",
+      "meaning": "ごめん、私のミス（軽い謝罪）",
+      "example": "My bad, I grabbed your coffee.",
+      "example_ja": "ごめん、君のコーヒー取っちゃった。",
+      "note": "「I'm sorry」よりずっとカジュアル。友達同士向け。"
+    },
+    {
+      "id": 4,
+      "phrase": "Meh.",
+      "meaning": "まあまあ、どうでもいい（無関心）",
+      "example": "How was the movie? Meh.",
+      "example_ja": "映画どうだった？ うーん、普通。",
+      "note": "良くも悪くもなく、あまり心が動かない感じ。"
+    },
+    {
+      "id": 5,
+      "phrase": "No worries.",
+      "meaning": "気にしないで、大丈夫だよ",
+      "example": "Sorry I'm late! No worries.",
+      "example_ja": "遅れてごめん！ 大丈夫だよ。",
+      "note": "謝られたときや礼を言われたときの返し。"
+    },
+    {
+      "id": 6,
+      "phrase": "You bet!",
+      "meaning": "もちろん！／どういたしまして",
+      "example": "Thanks for the ride! You bet.",
+      "example_ja": "乗せてくれてありがとう！ もちろん。",
+      "note": "元気な「もちろん」。お礼への返事にもなる。"
+    },
+    {
+      "id": 7,
+      "phrase": "Bummer.",
+      "meaning": "残念だね、ついてないね",
+      "example": "It's raining on your day off? Bummer.",
+      "example_ja": "休みの日に雨？ ついてないね。",
+      "note": "ちょっとした不運への軽い同情。"
+    },
+    {
+      "id": 8,
+      "phrase": "Go figure.",
+      "meaning": "不思議だね／まったく（皮肉）",
+      "example": "The one day I'm early, the bus is late. Go figure.",
+      "example_ja": "早く来た日に限ってバスが遅れる。まったくね。",
+      "note": "「予想通りの皮肉な展開」への肩すくめ。直訳しにくい。"
+    },
+    {
+      "id": 9,
+      "phrase": "Duh.",
+      "meaning": "そんなの当たり前でしょ",
+      "example": "Is the store closed on Christmas? Duh.",
+      "example_ja": "クリスマスに店閉まってる？ 当たり前じゃん。",
+      "note": "「分かりきったこと」を少しからかう感じ。失礼にも聞こえる。"
+    },
+    {
+      "id": 10,
+      "phrase": "Yikes.",
+      "meaning": "うわっ、まずい（ドン引き・恐怖）",
+      "example": "You forgot her birthday? Yikes.",
+      "example_ja": "彼女の誕生日忘れた？ うわ、まずいね。",
+      "note": "気まずい・怖い・イタい状況にたじろぐ音。"
+    },
+    {
+      "id": 11,
+      "phrase": "Oops.",
+      "meaning": "あっ、しまった（小さなミス）",
+      "example": "Oops, I sent it to the wrong person.",
+      "example_ja": "あっ、違う人に送っちゃった。",
+      "note": "うっかりミスの瞬間に出る一言。"
+    },
+    {
+      "id": 12,
+      "phrase": "Hang in there.",
+      "meaning": "もう少し頑張って、耐えて",
+      "example": "Only one more week. Hang in there!",
+      "example_ja": "あと1週間。頑張って耐えてね！",
+      "note": "つらい状況の人を励ますときの定番。"
+    },
+    {
+      "id": 13,
+      "phrase": "Give me a break.",
+      "meaning": "勘弁してよ、いい加減にして",
+      "example": "Another meeting today? Give me a break.",
+      "example_ja": "今日もまた会議？ 勘弁してよ。",
+      "note": "あきれ・いらだちの表現。文字通り「休憩」ではない。"
+    },
+    {
+      "id": 14,
+      "phrase": "Fair enough.",
+      "meaning": "なるほど、それもそうだね（納得）",
+      "example": "I'd rather walk. Fair enough.",
+      "example_ja": "歩いた方がいいな。なるほど、了解。",
+      "note": "相手の言い分を潔く受け入れるときに。"
+    },
+    {
+      "id": 15,
+      "phrase": "Suit yourself.",
+      "meaning": "好きにすれば（勝手にどうぞ）",
+      "example": "I'll skip dessert. Suit yourself.",
+      "example_ja": "デザートはいいや。好きにすれば。",
+      "note": "「私は気にしないよ」という、少し突き放したニュアンス。"
+    },
+    {
+      "id": 16,
+      "phrase": "Way to go!",
+      "meaning": "よくやった！（時に皮肉で）",
+      "example": "You passed the exam? Way to go!",
+      "example_ja": "試験受かったの？ よくやった！",
+      "note": "本気の称賛にも、失敗への皮肉にもなる。トーンが鍵。"
+    },
+    {
+      "id": 17,
+      "phrase": "Heads up!",
+      "meaning": "気をつけて、前もって知らせるね",
+      "example": "Heads up, the boss is coming.",
+      "example_ja": "先に言っておくね、上司が来るよ。",
+      "note": "危険や情報を「事前に」知らせる合図。"
+    },
+    {
+      "id": 18,
+      "phrase": "Gotcha.",
+      "meaning": "了解／捕まえた",
+      "example": "Turn left at the light. Gotcha.",
+      "example_ja": "信号を左ね。了解。",
+      "note": "「got you」の短縮。理解の相づちが最も一般的。"
+    },
+    {
+      "id": 19,
+      "phrase": "Take it easy.",
+      "meaning": "気楽にね／じゃあね",
+      "example": "See you tomorrow. Take it easy!",
+      "example_ja": "また明日。じゃあね！",
+      "note": "「落ち着いて」の意味と、別れ際の挨拶の両方で使う。"
+    },
+    {
+      "id": 20,
+      "phrase": "Same here.",
+      "meaning": "私も同じ、同感",
+      "example": "I'm exhausted. Same here.",
+      "example_ja": "もうくたくた。私も同じ。",
+      "note": "「Me too」と同じ意味のカジュアルな相づち。"
+    }
+  ]
+}
